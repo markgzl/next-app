@@ -7,18 +7,18 @@ import { Menu } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 
 const navLinks = [
-  { href: '/home', label: '首页' },
+  { href: '/next-app/home', label: '首页' },
   {
-    href: '/products',
+    href: '/next-app/products',
     label: '产品',
     children: [
-      { href: '/products/water-filtration-systems', label: '水过滤系统' },
-      { href: '/products/reverse-osmosis-systems', label: '反渗透系统' },
+      { href: '/next-app/products/water-filtration-systems', label: '水过滤系统' },
+      { href: '/next-app/products/reverse-osmosis-systems', label: '反渗透系统' },
     ],
   },
-  { href: '/contractors', label: '承包商' },
-  { href: '/news', label: '新闻' },
-  { href: '/contact', label: '联系我们' },
+  { href: '/next-app/contractors', label: '承包商' },
+  { href: '/next-app/news', label: '新闻' },
+  { href: '/next-app/contact', label: '联系我们' },
 ];
 
 interface NavLinkProps {
@@ -45,7 +45,7 @@ export function Nav() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
+            <Link href="/next-app" className="flex items-center space-x-2">
               <Image
                 src="/vercel.svg"
                 alt="Logo"
