@@ -5,8 +5,6 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  basePath:  '/next-app',
-  assetPrefix: '/next-app/',
   env:{
     exportHtml: "true"
   }
