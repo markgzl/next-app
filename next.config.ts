@@ -6,7 +6,10 @@ const nextConfig: NextConfig = {
     unoptimized: true
   },
   basePath:  '/next-app',
-  assetPrefix: '/next-app/' 
+  assetPrefix: '/next-app/',
+  env:{
+    exportHtml: "true"
+  }
 };
 
 export default nextConfig;
